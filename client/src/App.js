@@ -27,7 +27,7 @@ class App extends Component {
       <div>
         <div className="jumbotron text-center header">
           <h1>Sensor Data</h1>
-          <p>Displays sensor data from NodeMCU</p>
+          <p>Displays sensor data received from NodeMCU</p>
         </div>
 
         <div className="jumbotron text-center sensorvalue">
