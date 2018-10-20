@@ -1,6 +1,6 @@
 const express = require('express');
 const server = express();
-
+const Sensor = require('./Sensor');
 var value = 228;
 
 server.get('/', (req, res) => {
@@ -14,8 +14,7 @@ server.get('/', (req, res) => {
 });
 
 server.get('/getsensor1', (req, res) => {
-  // res.status(200).send(JSON.stringify(value));
-  res.status(200).json(value);
+  res.status(200).send(JSON.stringify(value));
 });
 
 server.listen(5000, () => {
